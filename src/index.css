@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+      /* @apply text-2xl; */
+      font-size: 32px;
+      font-family: verdana;
+      font-weight: 600;
+    }
+    h2 {
+      @apply text-xl;
+      font-size: 28px;
+      font-family: verdana;
+      font-weight: 600;
+
+    }
+  }

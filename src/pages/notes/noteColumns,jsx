@@ -1,0 +1,51 @@
+import { createColumnHelper } from '@tanstack/react-table';
+import TableCell from '../../components/TableCell';
+import EditCell from '../../components/EditCell';
+import { DateTime } from 'luxon';
+
+const columnHelper = createColumnHelper();
+
+const columns = [  
+  // columnHelper.accessor("id", {
+  //   header: "ID",
+  //   cell: TableCell,
+  //   meta: {
+  //     type: "id",
+  //   },
+  // }),
+  // columnHelper.accessor("owner_id", {
+  //   header: "Owner Id",
+  //   cell: TableCell,
+  //   meta: {
+  //     type: "number",
+  //   },
+  // }),
+  columnHelper.accessor("date_created", {
+    header: "Created on",
+    cell: info => DateTime.fromISO(info.getValue()).toLocaleString(DateTime.DATE_MED),
+    meta: {
+      type: "text",
+    },
+  }),
+  columnHelper.accessor("date_modified", {
+    header: "Date modified",
+    cell: info => DateTime.fromISO(info.getValue()).toLocaleString(DateTime.DATE_MED),
+    meta: {
+      type: "text",
+    },
+  }),
+  columnHelper.accessor("entry", {
+    header: "Note",
+    cell: TableCell,
+    meta: {
+      type: "text",
+    },
+  }),
+  ,
+  columnHelper.display({
+		id: "edit",
+		cell: EditCell,
+	}),
+];
+
+export default columns;

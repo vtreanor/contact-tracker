@@ -1,0 +1,68 @@
+
+.formContainer{  
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0px;
+    height: 60%;
+    width: 100%;
+    margin: 5px auto 0 auto;
+    border-radius: 20px; ;
+    /* align-items: center; */
+}
+
+.formContainer .form-panel{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.formContainer .inputDiv{
+    padding: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.formContainer .inputDiv label {
+    margin-right: 10px;
+    
+}
+
+.formContainer .inputDiv input{
+    padding: 5px;
+}
+
+.formContainer .inputDiv{
+    padding: 5px;
+    width: 100%;
+    text-align: left;
+    justify-content: end;
+    flex-basis: 50%;
+}
+
+/* This is the label */
+.formContainer .inputDiv div:nth-child(1){
+    padding: 5px;
+    margin-right: 10px;
+    text-align: right;
+    width: 30%;
+}
+
+
+/* This is the data div */
+.formContainer .inputDiv div:nth-child(2){
+    padding: 5px;
+    width: 70%;
+    text-align: left;
+}
+
+.formContainer button{
+    border: 1px solid gray;
+    padding: 5px;
+    width: 100px;
+    margin-left: 20px;
+    border-radius: 10px;
+    /* background-color: rgba(0, 255, 255, 0.61); */
+    background-color: brandGreen;
+}
+
