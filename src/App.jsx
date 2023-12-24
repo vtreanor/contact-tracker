@@ -1,7 +1,6 @@
 import { Outlet, Link, useLoaderData, NavLink } from "react-router-dom";
 import { useState } from 'react'
 import { FaSearch } from "react-icons/fa";
-// import Sidebar from "./components/sidebar";
 import Nav from "./components/nav";
 
 import './App.css'
